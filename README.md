@@ -7,7 +7,7 @@ Easy to use.
 ============
 1.Inject Cookies <br />
 
-paste your cookies which may be hijacked from wireshark ,tcpdump, xss attack ,etc.<br />
+paste your cookies which may be hijacked from wireshark ,tcpdump, xss attack ,etc. make sure that it's splitted by ";"<br />
 then click the button "Inject Cookies"<br />
 
 ![Alt text](/demo_pics/demo1.png "interface1")
@@ -26,6 +26,6 @@ click the "Edit" button ,it will skip to Edit Interface.
 
 Then, Enjoy it !:)
 
-any suggestions will be appreciated
+any suggestions or bugs will be appreciated
 
 plz send to onlyarter@gmail.com
