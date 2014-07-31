@@ -1,0 +1,16 @@
+{
+  "name": "Cookie Injecting Tools",
+  "version": "1.0",
+  "description": "A plugin for cookie injecting",
+   "icons": { "128": "icon_128.png" },
+  "manifest_version": 2,
+
+  "permissions": [
+    "tabs", "cookies", "http://*/*", "https://*/*", "background"
+  ],
+  "browser_action": {
+    "default_title": "Cookie Injecting Tools",
+    "default_icon": "icon.png",
+    "default_popup": "cookie_injector.html"
+  }
+}

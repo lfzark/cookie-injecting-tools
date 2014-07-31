@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookie Injecting Tools </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body style="width:600px;margin-left:10px;">
+       <ul class="nav nav-tabs" id='nav_menu'>
+
+ 	  <li  class="active" id='inject'><a href="#">Inject Cookies</a> </li>
+      <li  id='view_cookies'><a href="#" >View Cookies</a></li>
+      <li  id='edit_cookies'><a href="#" >Edit/Add Cookies</a></li>
+      <li  id='advanced_options'><a href="#" >Advanced Options</a></li>
+
+       </ul>
+
+        <div id='fun_inject' class="container" style="width:600px;margin-left:10px;" >
+        
+        <form class="form-signin form-horizontal">
+
+        <h4 class="form-signin-heading">Cookie Injecting Tools 1.0</h4>
+
+          <label class="control-label" for="domain" style="width:auto;margin-bottom:15px"> domain :</label>  <input id='domain'  type="text" class="input-block-level" style="width:200px; " placeholder="domain.com" >
+  
+		 
+      
+        <textarea  id="cookie_values" style="width:560px;height:300px;"   ></textarea> 
+       
+        <div id='notice'></div>
+		<br><br>
+        <input type="button"  id='inject_btn' class="btn btn-small btn-primary" value='Inject Cookies'>
+        <!--<input type="button"  id='save_btn' class="btn btn-small btn-primary" value='Save'>-->
+      </form>
+	
+    </div> <!-- /container -->
+
+  <div id='fun_view_cookies' style='display:none ; overflow:auto;overflow_x:scroll'>
+  <input id='domain_filter' type="text" class="input-block-level" style="width:300px;"  placeholder="domain filter eg. google.com">
+
+</div>
+
+
+
+<div id='fun_edit_cookies'  style='display:none'>
+ <table class="table table-hover">
+ 
+</table>
+<form class="form-horizontal" >
+  <div class="control-group" >
+    <label class="control-label" for="m_domain">domain:</label>
+    <div class="controls">
+      <input type="text" id="m_domain" placeholder="domain" style="width:300px">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="m_name">cookie name:</label>
+    <div class="controls">
+      <input type="text" id="m_name" placeholder="cookie name" style="width:300px">
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="m_value">cookie value:</label>
+    <div class="controls">
+      <textarea type="text" id="m_value" placeholder="cookie value" style="height:200px;width:300px" > </textarea>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="m_expire">expirationDate :</label>
+    <div class="controls">
+      <input type="text" id="m_expire" placeholder="expirationDate"  style="width:300px">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input id='m_secure' type="checkbox"> secure 
+      </label>
+      <label class="checkbox">
+        <input id='m_httponly' type="checkbox"> httpOnly 
+      </label>
+      <div id='op_info'></div><br>
+      <input  type="button"  class="btn btn-small btn-primary" id='add_btn' value="Add ">
+      <input  type="button"  class="btn btn-small btn-primary" id='modify_btn' value="Modify ">
+      <input  type="button"  class="btn btn-small btn-primary" id='del_btn' value="Del ">
+    </div>
+  </div>
+</form>
+<input type="hidden" id='m_path' >
+
+</div>
+<div id='fun_advanced_options' style='display:none' >
+ <table class="table table-hover">
+  <tr><td><button  id='auto_reload_btn' type="button" class="btn btn-primary" data-toggle="button">Reload When Cookie Changes  </button></td></tr>
+<div id='advanced_option_info'></div></br>
+  by Ark July,2014</br>
+  Email:<a href=mailto:onlyArter@gmail.com>onlyArter@gmail.com</a></br>
+  Github:<a href='https://github.com/lfzark/'>https://github.com/lfzark/ </a>
+</table>
+
+
+</div>
+  </body>
+</html>
